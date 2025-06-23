@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="IngeMundo+ | Ingeniería Industrial con el ing Kevin Cardona">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta name="author" content="ing.Kevin Cardona">
+  <meta name="keywords" content="ingeniería industrial, asesoría, Tips, noticias, proyectos, ingenieros, ingeniero, industria, Colombia, Kevin Cardona">
+  <meta name="description" content="Todo sobre la ingeniería industrial: historia, áreas, oportunidades, videos, imagenes, funciones y más.">
+  <meta property="og:image" content="imagenes/mifoto.jpg">
+  <meta property="og:type" content="website">
+  <title>La Ingenieria Industrial</title>
+  <link rel="icon" href="imagenes/logo.png.jpg" type="image/png">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<body>
+  <div id="particles-js"></div>
+  <div id="progress-bar"></div>
+  <img src="imagenes/logo.png.jpg" alt="Cargando..." class="loader-logo">
+<header class="main-header">
+  <div class="header-left">
+    <a href="index.html" class="logo">
+      <img src="imagenes/logo.png.jpg" alt="IngeMundo+">
+      <div class="logo-text">
+        <h1 class="logo-title">IngeMundo+</h1>
+        <span class="slogan">Impulsando Futuros</span>
+      </div>
+    </a>
+  </div>
+  <button class="menu-toggle" aria-label="Abrir menú">
+    <i class="fas fa-bars"></i>
+  </button>
+<nav class="main-nav" aria-label="Navegación principal">
+  <a href="index.html" class="nav-link">Inicio</a>
+  <a href="nosotros.html" class="nav-link">Nosotros</a>
+  <a href="servicios.html" class="nav-link">Servicios</a>
+  <a href="contacto.html" class="nav-link">Contacto</a>
+  <a href="contacto.html" class="contact-btn" aria-label="Ir a la página de contacto">Contáctame</a>
+  <button id="darkModeBtn" aria-label="Modo oscuro"><i class="fas fa-moon"></i></button>
+  <form class="search-form" role="search" aria-label="Buscar en el sitio">
+    <input type="search"  id="buscador" placeholder="Buscar..." aria-label="Buscar">
+    <div id="no-result-msg" style="display:none; color: #ff5252; font-weight: bold; text-align: center; margin: 1rem 0;">
+  No se encontraron resultados para tu búsqueda, intenta con otra palabra clave.
+  <button id="cerrar-noresult" style="margin-left:1rem;">Cerrar</button>
+  <div class="search-wrapper">
+  <input type="search" id="buscador" placeholder="Buscar..." aria-label="Buscar">
+  <span class="search-icon"><i class="fas fa-search"></i></span>
+</div>
+</div>
+    <button type="submit"><i class="fas fa-search"></i></button>
+  </form>
+</nav>
+    <div class="header-social">
+    <a href="https://www.facebook.com/share/191oFoH9Wi/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/kevin_cardonap?igsh=OTI3aHF1OWIzc2Rx&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@kevincardonap?_t=ZS-8wx78wiOn04&_r=1" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+    <a href="https://youtube.com/@kevincardona1456?si=yMjMBuhdisUAio_o" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+  </div>
+</header>
+  <br>
+  <h1 class="espacio-superior">UNA INGENIERIA VERSATIL</h1>
+    <br>
+    <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/l0E1HsPgBBo?si=LynGySCCURd08bdP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls></iframe>
+    </div>
+    <br>
+    <br>
+    <div class="carrusel">
+     <div class="lightbox-img fade-in"><img src="imagenes/img1.jpg" alt="foto1"></div>
+     <div class="lightbox-img fade-in"><img src="imagenes/img2.jpg" alt="foto2"></div>
+     <div class="lightbox-img fade-in"><img src="imagenes/img3.jpg" alt="foto3"></div>
+     <div class="lightbox-img fade-in"><img src="imagenes/img4.jpg" alt="foto4"></div> 
+     <div class="lightbox-img fade-in"><img src="imagenes/img5.jpg" alt="foto5"></div>
+     <div class="lightbox-img fade-in"><img src="imagenes/img6.jpg" alt="foto6"></div>  
+     <div class="lightbox-img fade-in"><img src="imagenes/img7.jpg" alt="foto7"></div>
+     <div class="lightbox-img fade-in"><img src="imagenes/img8.jpg" alt="foto8"></div>
+     <div class="lightbox-img fade-in"><img src="imagenes/img9.jpg" alt="foto9"></div>
+     <div class="lightbox-img fade-in"><img src="imagenes/img10.jpg" alt="foto10"></div> 
+    </div>
+    <h2 class="fade-in">LA INGENIERIA INDUSTRIAL</h2>
+    <p>Esta ingenieria esta enfocada en la optimización de procesos, operaciones y sistemas dentro de las organizaciones, con el objetivo de ser mas eficaz, eficiente enfocados en la productividad y calidad de los bienes o servicios. <br>  
+    <p>La palabra ingeniería tiene sus orígenes en el latín: ingenium que significa engendrar o producir con apoyo en el ingenio o la mente. Con el tiempo, el vocablo se convirtió en el francés engin y para el inglés engine, refiriéndose a las máquinas. La relación es clara, un ingeniero es aquel que produce, mejora y opera las máquinas que utilizamos los seres humanos.</p> 
+    <p>La ingeniería industrial es una de las ramas de la ingeniería más versátiles y multidisciplinarias, ya que combina conocimientos de matemáticas, ciencias físicas, economía y gestión empresarial para resolver problemas complejos en diferentes sectores. Los ingenieros industriales trabajan en una amplia variedad de industrias, desde la manufactura y la logística hasta la salud y los servicios financieros. Su objetivo principal es mejorar la eficiencia y la productividad de las organizaciones, optimizando los procesos y utilizando los recursos de manera más efectiva. La ingeniería industrial también se enfoca en la gestión de la calidad, la seguridad y el medio ambiente, asegurando que los productos y servicios cumplan con los estándares requeridos y sean sostenibles a largo plazo.</p>
+    <p>En resumen, la ingeniería industrial es una disciplina clave para el desarrollo y la mejora de las organizaciones, que busca maximizar la eficiencia y la calidad de los procesos y productos, contribuyendo al crecimiento económico y social.</p>
+    <br>
+    <hr>
+    <br>
+    <h1 class="fade-in">Algunas de las áreas clave en las que se enfoca la Ingeniería Industrial son:</h1>
+    <br>
+    <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wpNAhjH2rrE?si=G5puIpynph6Jwvh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls></iframe>
+    </div>
+    <br>
+    <br>
+    <ol>
+      <li><h2><span style="color:blue">Gestión de Operaciones:</span></h2></li>
+      <p>Optimización de los procesos productivos de la organización, planificación de la producción o manufactura, gestión y control de inventarios, sistema de gestión de calidad, entre otras.</p>
+    <br>
+      <li class="gray-element"><h2 style="color:blue">Logística:</h2></li>
+      <p>Diseño de redes logísticas, gestión de flotas empresariales, optimización de rutas de distribución y transporte, gestión de almacenes e inventarios, entre otras. </p>
+    <br>
+      <li><h2 style="color:blue"> Recursos Humanos: </h2></li>
+      <p>Gestión del personal, diseño de los sistemas de capacitación de la organización, análisis de los puestos de trabajo, entre otras funciones importantes relacionadas con la gestión del recurso humano.</p>
+    <br>
+      <li class="gray-element"><h2 style="color:blue">Gestión de la Cadena de Suministro: </h2></Li>
+      <p>Planificación y gestión de la cadena de suministro, desde la adquisición de materias primas hasta la entrega al cliente final.</p>
+    <br>
+      <li><h2 style="color:blue"> Análisis de Datos:</h2></li>
+<P>Analisis de datos para la toma de decisiones para identificar patrones de comportamiento y mejorar procesos y las operaciones de la organizacion. 
+    <br> 
+    <br>      
+    <hr>
+    </ol>
+    <br>
+    <h1 class="fade-in">Historia y origen de la ingenieria industrial</h1>
+    <br>
+    <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/E5IenW6ud0c?si=-fc9Ix_oXblhnB9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen controls></iframe>
+    </div>
+    <br>
+    <br>
+    <p>Los inicios de la ingenieria industrial se remontan a finales del siglo XVIII, durante la Revolución Industrial en Inglaterra. En ese momento los avances tecnológicos cambiaban la forma en la que se producían los productos tras el surgimiento de la maquinaria y la mecanización de los procesos</p>
+    <p>Fue en este contexto que surgió la necesidad de optimizar la producción y los procesos de la industria. Los empresarios comenzaron a darse cuenta de que necesitaban aplicar métodos científicos y matemáticos para aumentar la eficiencia y reducir sus tiempos y costos, esto dio pie al nacimiento de la Ingeniería Industrial.</p>
+    <p>Los seres humanos, conforme evolucionamos, hemos utilizado las leyes de la física a nuestro favor para optimizar la administración de nuestros recursos. Desde tiempos ancestrales, nuestra especie entendió el funcionamiento de una rueda, la polea, las palancas y los tornillos. La agricultura, por ejemplo, siempre requirió de innovaciones tecnológicas para maximizar la producción alimentaria, cuya demanda, lógicamente, cada vez fue mayor. Durante las etapas de auge de las civilizaciones más antiguas se sentaron también las bases de la maquinaria de hoy; puedes contar con que Ingeniería Industrial es una carrera con siglos de respaldo.
+    <p>Una vez en la etapa conocida como el Renacimiento, en el siglo XV, las sociedades europeas entraron en una fase de antropocentrismo. Es decir, la persona comenzaba a ser el centro del pensamiento individual y colectivo, y no lo relacionado a la religión, como antes. Este cambio de paradigma aumentó la velocidad con la que se crean nuevas tecnologías. La imprenta, por ejemplo, fue un invento insignia de este tiempo que necesitó de los ingenieros de entonces para construirse, operarse y distribuirse de la mejor forma. Es también durante este tiempo que acontece la separación entre el arquitecto y el ingeniero: el primero se dedicaría a la construcción de edificios y el segundo a la maquinaria. De hecho, el conocimiento de los ingenieros se dedicó a la defensa de los reyes, a la guerra.  
+    <p>Tres siglos después del Renacimiento, en el XVIII, comienza en Inglaterra la Revolución Industrial, el periodo de avance tecnológico más importante para la humanidad, además de un gran auge para la Ingeniería Industrial, desde luego. Los procesos de trabajo para las empresas comenzaba a consolidarse, las poblaciones se mudaron a zonas urbanas y la manufactura se aceleró más que nunca. Además, los procesos del comercio entre países se aceitaron, lo cual fomentó las economías internacionales, así como importación y exportación de productos.
+    <p>para el siglo XIX, la Ingeniería Industrial se reconocía como una carrera en sí misma. En 1824, en Madrid, nace el Real Conservatorio de las Artes, el cual albergó después al Real Instituto Industrial, de los primeros lugares en el mundo donde surgió el título de ingeniero industrial. La disciplina fue tan popular durante sus primeros años que para 1889 se creó en España la Asociación Nacional de Ingenieros Industriales. Con el tiempo, la carrera de Ingeniería Industrial se volvió cada vez más necesaria en un mundo que, entrando al agitado siglo XX, necesitaría mucha más maquinaria, y a los operadores correctos para que corrieran de manera eficiente.</p>
+    <br>
+    <h2 class="fade-in">¿Que necesidades cubrieron los ingenieros industriales?</h2>
+    <br>
+    <ul>
+      <li class="gray-element"><strong>Optimización de la producción:</strong> con el surgimiento de la maquinaria y la mecanización de los procesos era necesario encontrar formas más eficientes de producir bienes. Por lo tanto, la Ingeniería Industrial se encargó de analizar y optimizar los procesos de producción para aumentar la productividad y reducir los costos. </li>
+      <br>
+      <li><strong>Organización del trabajo:</strong> la maquinaria requirió una forma de organizar a los trabajadores y coordinar sus tareas de manera eficiente. En este caso, la Ingeniería Industrial se ocupó de diseñar estructuras organizativas y métodos de trabajo que permitieron la colaboración y coordinación efectiva entre los empleados.</li>
+      <br>
+      <li class="gray-element"><strong>Estudio científico de los procesos:</strong> para mejorar la productividad y reducir los costos era necesario aplicar métodos científicos y matemáticos en la gestión de los procesos de producción. La Ingeniería Industrial se centró en desarrollar técnicas y herramientas para estudiar y analizar estos con el objetivo de identificar áreas de mejora y optimizar los recursos. </li>
+      <br>
+      <li><strong>Eficiencia en el uso de recursos:</strong> en un contexto de crecimiento industrial era fundamental encontrar formas más eficientes de utilizar los recursos disponibles como la energía, el espacio y los materiales. Por lo tanto, esta rama de la ingeniería se enfocó en el diseño de sistemas y métodos que permitieron una utilización efectiva y sostenible de estos recursos.</li>
+      <br>
+      <li class="gray-element"><strong>Mejora de la calidad y seguridad:</strong> con la producción masiva y la diversificación de productos era importante garantizar la calidad de los bienes y la seguridad de los trabajadores. Finalmente, la Ingeniería Industrial se ocupó de desarrollar técnicas para el control de calidad y la gestión de la seguridad en los procesos industriales.</li>
+    </ul>
+    <br>
+    <br>
+    <h1 class="fade-in">Padres o pioneros de la ingenieria industrial</h1>
+    <br>
+    <h2>FREDERICK W. TAYLOR</h2>
+    <br>
+    <img src="imagenes/frederick.jpg" width="200" height="250">
+    <br>
+    <p>Se le considera el padre de la Ingeniería Industrial y la Dirección Científica. Fue un ingeniero mecánico que influyó enormemente en los procesos industriales de manufactura de Estados Unidos y del mundo. En sus inicios, en la industria del acero, investigó sobre los mejores métodos de trabajo.</p>
+    <p>Entre sus aportes destaca el sistema diferencial de primas por pieza, la determinación científica de los estándares de trabajo y el establecimiento de la dirección científica.</p>
+    <br>
+    <h2>HENRY FORD</h2>
+    <br>
+    <img src="imagenes/henryford.jpg">
+    <br>
+    <p>Este empresario norteamericano, fundador de la compañía Ford Motor Company, es conocido en todo el mundo como el padre de las cadenas de producción modernas. Su principal aporte fue la producción en serie, un procedimiento que nació para reducir los costos de fabricación.</p>
+      <p>Henry Ford hizo varios aportes a la ingeniería industrial gracias a la adopción de tres principios básicos: el principio de intensificación, el principio de economicidad y el principio de productividad.</p>
+    <br>
+    <h2>HENRY GANTT</h2>
+    <br>
+    <img src="imagenes/henrygantt.jpg" width="200" height="250">
+    <br>
+    <p>Fue un ingeniero industrial mecánico estadounidense que impactó profundamente en el desarrollo de la filosofía de Dirección. Trabajó como consultor industrial y durante muchos años colaboró con Frederick Taylor en varias industrias.</p>
+    <p>Algunos de sus aportes más destacados fueron la gráfica de barras, conocida como carta o diagrama de Gantt, una herramienta de gestión y planificación de proyectos que ayuda a visualizar las tareas. También el estudio de la Dirección Científica, con una visión más humanística que Taylor, y varios trabajos en el campo de la motivación.</p>
+    <br>
+    <hr>
+    <h1 class="fade-in"> Los objetivos principales de la Ingeniería Industrial son: </h1>
+    <br>
+    <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/E5IenW6ud0c?si=-fc9Ix_oXblhnB9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <br>
+    <ul>
+      <li class="gray-element">Uno de los objetivos principales objetivos de la Ingenieria industrial es mejorar la eficiencia y la productividad de las organizaciones reduciendoles costos, optimizando sus procesos y utilizando los recursos de la misma de manera más eficiente</li><br>
+    <br>
+      <li>Sin descuidar el foco de aumentar la calidad de sus productos y servicios, asegurandose de que cumplan con los requisitos y especificaciones de sus clientes por medio de el control y el buen uso de la gestion de la calidad. </li><br>
+    <br>
+      <li class="gray-element">Otro de sus objetivos es resolver los problemas mas complejos Identificando, analizando y desarrollando soluciones innovadoras e implementándolas de manera efectiva. </li><br>
+    <br>      
+    <li>Otro muy importante es promover la sostenibilidad diseñando procesos y sistemas que sean responsables con el medio ambiente </li> <br> </p>
+    </ul>
+    <br>
+    <hr>
+    <h1 class="fade-in">¿En que industrias puede trabajar un ingeniero industrial? </h1>
+    <br>
+    <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wpNAhjH2rrE?si=bzSdC3LRUj0eXSJX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <p>Los ingenieros industriales trabajan en un amplio abanico de sectores puesto que sus habilidades son necesarias en casi cualquier industria.
+    <br>
+    <p>
+    <h3 style="color:blue"> Algunos de los más comunes campos de acción de estos ingenieros son: </h3>
+    </p>
+    <ul>
+        <li class="gray-element">Aeroespacial</li>
+        <li>Auromatizacion</li>
+        <li class="gray-element">Productos de consumo</li>
+        <li>Construccion</li>
+        <li class="gray-element">Energetico</li>
+        <li>Procesamiento de alimentos</li>
+        <li class="gray-element">Asistencia sanitaria</li>
+        <li>Fabricacion de industria pesada</li>
+        <li class="gray-element">Tecnologia de la informacion</li>
+        <li>Seguros</li>
+        <li class="gray-element">Medico</li>
+        <li>productos farmaceuticos</li>
+        <li class="gray-element">robotica</li>
+        <li>Electronica</li>
+        <li class="gray-element">Electricidad</li>
+        <li>Datos y software</li>
+    </ul>
+    <hr>
+    <h1 class="fade-in">¿Cual es el perfil un ingeniero industrial? </h1>
+    <p>El perfil de un ingeniero industrial es el de alguien que disfruta trabajando en equipo, resolviendo problemas y diseñando productos y servicios de forma mas eficiente con recursos limitados. </p>
+    <p>Un profesional en ingeniería industrial también trabaja en temas complejos como la mejora de los procesos de fabricación mediante el uso de herramientas tecnológicas avanzadas como programas informáticos, hardware, software etc.</p>
+    <p>Una persona egresada de Ingeniería Industrial sabe gestionar los sistemas de manufactura de las empresas o gobiernos. Es quien mejor sabe optimizar los recursos materiales con los que se cuentan y entender los proyectos con sus efectos integrales, es decir, en todas las áreas de una sociedad. El ingeniero industrial también está en contacto con la sociedad donde trabaja, en especial aquellas donde los proyectos son de su incumbencia, pues debe asegurarse de que no perjudique a nadie. Esto incluye el medio ambiente, una preocupación central de nuestro siglo a la que los ingenieros industriales no deben ser ajenos.
+    <p>En general, un ingeniero industrial debe ser una persona analítica, creativa, con habilidades de liderazgo y capaz de trabajar en equipo. Además, debe tener una sólida formación en matemáticas, física y ciencias de la computación.</p>
+      <br>
+      <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/W3H6cjn07pE?si=dF06kr7W1kEHlCVN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <br>
+        <h3 style="color:blue"> Por esto generalmente se espera que un ingeniero industrial cumpla con las siguientes características: </h3>
+    <ul>
+        <li class="gray-element">Ser innovador en todo momento. </li>
+        <li>Tener sentido de la urgencia cuando sea necesario. </li>
+        <li class="gray-element">Ser capaz de trabajar de forma independiente y sin supervisión. </li>
+        <li>Tener excelentes habilidades interpersonales, puesto que se trata de un perfil que debe relacionarse muy bien con otras áreas y profesionales. </li>
+        <li class="gray-element">Ser capaz de comunicarse de forma efectiva tanto moralmente como por escrito. </li>
+        <li>Tener excelentes habilidades para resolver problemas de forma creativa, innovadora y rapida </li>
+      </ul>
+    <br>
+    <hr>
+    <h1 class="fade-in">¿que se aprende en la ingenieria industrial</h1>
+    <p>Al estudiar Ingeniería Industrial aprenderás a utilizar modelos matemáticos y programas informáticos para analizar diferentes aspectos de una empresa o una industria, como los costos de producción y la productividad laboral. En general, como ves, aprenderás sobre matemáticas, computación, gestión de costos y presupuestos, organización, etc.</p>
+      <br>
+      <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/k1rdvPHhrmw?si=1gbQ4PuNjBGYY_JV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <br>
+      <br>
+      <p>Como pudimos apresiar en el video estas son algunas material del plan de estudio de ingenieria industrial mas comun que usan las universidades de colombia:</p>
+      <ul>
+         <li class="gray-element">Matemáticas</li>
+         <li>Dibujo técnico</li>
+         <li class="gray-element">Programación de Computadores</li>
+         <li>Álgebra lineal </li>
+         <li class="gray-element">Cálculo I, II y III</li>
+         <li>Fundamentos de Química</li>
+         <li class="gray-element">Organización y Métodos</li>
+         <li>Física I, II y III</li>
+         <li class="gray-element">Investigación de Operaciones</li>
+         <li>Procesos industriales </li>
+         <li class="gray-element">Investigación de Operaciones</li>
+         <li>Procesos industriales</li>
+         <li class="gray-element">Contabilidad general</li>
+         <li>Probabilidades estadisticas</li>
+      </ul>
+    <br>
+      <hr>
+        <h1 class="fade-in">¿Cuanto gana un ingeniero industrial?</h1>
+      <br>
+      <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/1fwdxclRtjY?si=wB6LrTuDUEgNLqfL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <br>
+      <br>
+          <p>La ingenieria industrial es una de las ingenierías más demandas en Colombia. Según los informes del portal especializado elempleo.com los ingenieros industriales llevan varios años ocupando el top 3 de los profesionales más solicitados en el país. Como ves, esta carrera tiene un futuro laboral muy prometedor.</p>
+          <p>De acuerdo con <strong style="color:green"> <a target="_blank" href="https://www.asocoldep.edu.co/">Asocoldep</a>,</strong> la Asociación Colombiana de Educación Privada, los ingenieros industriales están en la lista de las 20 carreras mejor pagadas en el país. De hecho, su tasa de empleabilidad o sus probabilidades de vincularse laboralmente con una empresa son de 85,6 %.</p>
+          <p>Ahora veamos puntualmente cuál es el salario promedio de un ingeniero industrial. Según <strong style="color:green"> <a target="_blank" href="https://www.asocoldep.edu.co/">Asocoldep</a></strong>, se estima que los ingenieros industriales tienen un salario inicial (el de un profesional sin experiencia) de alrededor de $ 1.908.346 pesos colombianos. Sin embargo, de acuerdo con <span style="color:green"><a target="_blank" href="https://www.semana.com/finanzas/trabajo-y-educacion/articulo/estas-son-las-carreras-con-las-que-puede-ganar-mas-de-10-millones-mensuales-en-colombia/202129/">Semana</a>,</span> los ingenieros industriales son uno de los profesionales que pueden llegar a ganar más de 10 millones de pesos al mes.<br>
+      <hr>
+        <h1 class="fade-in">¿porque estudiar ingenieria industrial?</h1>
+          <br>
+          <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/c-H3elt0V_o?si=t6-4qN4UiFJlbkAE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <br>
+          <p>Como ingeniero industrial, vivirás una vida de resolución de problemas y creación de soluciones. Diseñarás nuevas máquinas, desarrollarás procesos de producción y establecerás normas de calidad. Si esto no te convence, 
+          <h2 class="fade-in">Estas son las principales razones para estudiar Ingeniería Industrial:</h2>
+          <br> 
+         <li class="gray-element">Es una profesión de mucha importancia para la sociedad. </li>
+         <li>Podrás explorar toda tu creatividad e imaginación al estar en un rol que constantemente debe innovar. </li>
+         <li class="gray-element">Es una de las carreras más solicitadas en el país y con una muy buena proyección de empleabilidad. </li>
+         <li>Podrás desempeñarte en un gran número de industrias o sectores, desde la producción de alimentos hasta la aeroespacial.</li>
+         <li class="gray-element">Podrás trabajar en el sector privado o el sector público. </li>
+         <li>Si no deseas emplearte en una organización, tu formación cono ingeniero industrial te permitirá convertirte en un emprendedor para innovar el mercado con un producto o servicio propio. </li>
+         <br>      
+         </ul>
+         <hr>
+         <br>
+         <h1>¿Que tan dificil es estudiar ingenieria industrial?</h1>
+         <br>
+         <div class="video-container">
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/CGRS88V1V0s?si=-Ikec0pOXFkX01tu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+         <br>
+         <p>La dificultad de estudiar Ingeniería Industrial puede variar según la persona y su preparación previa. Sin embargo, en general, se considera una carrera desafiante debido a la combinación de matemáticas, física, economía y gestión empresarial que abarca.</p> 
+         <p>Además, requiere habilidades analíticas, pensamiento lógico, capacidad para resolver problemas y una buena organización del tiempo, ya que los proyectos y trabajos en equipo suelen ser frecuentes.</p>
+         <p>Muchos estudiantes encuentran retadoras materias como estadística, investigación de operaciones, simulación y gestión de procesos, pero con dedicación y disciplina es posible superarlas.</p>
+         <p>Por otro lado, la carrera también ofrece muchas oportunidades para desarrollar habilidades prácticas y blandas, como liderazgo, comunicación y trabajo en equipo, que son muy valoradas en el mundo laboral.</p>
+         <p>En resumen, aunque puede ser exigente, estudiar Ingeniería Industrial es una experiencia enriquecedora que abre muchas puertas profesionales y personales.</p>
+         <hr>
+         <br>
+         <h1>LA DISTRIBUCIÓN DE PLANTA</h1>
+         <p>La distribución de planta es una disciplina fundamental en la ingeniería industrial que consiste en organizar de manera eficiente los espacios, equipos, maquinaria y personal dentro de una empresa o fábrica. Su objetivo principal es optimizar el flujo de materiales, minimizar tiempos de desplazamiento y reducir costos operativos, asegurando así una mayor productividad y seguridad en las operaciones. Una buena distribución de planta facilita la supervisión, mejora la comunicación entre áreas y permite adaptarse a cambios en la producción. Además, contribuye a crear un ambiente de trabajo más ordenado y seguro, impactando positivamente en la calidad de los productos y en la satisfacción de los empleados.</p>
+         <p>Una correcta distribución de planta no solo impacta en la eficiencia y los costos, sino que también influye en la satisfacción de los empleados y en la seguridad laboral. Al reducir los desplazamientos innecesarios y mejorar la accesibilidad a los recursos, se fomenta un ambiente de trabajo más productivo y colaborativo, lo que puede traducirse en una mayor competitividad para la empresa.</p>
+         <p>En resumen, la distribución de planta es una herramienta clave en la ingeniería industrial que busca optimizar el uso del espacio y los recursos, mejorando así la eficiencia operativa y la calidad de los productos o servicios ofrecidos por una organización.</p>
+         <br>
+         <div class="mapa-centro">
+         <img src="imagenes/distribucion-planta.jpg" alt="Mapa de distribución de planta de una empresa" style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
+         <p style="text-align:center; color: #555; margin-top: 8px;">Ejemplo de distribución de planta en una empresa</p>
+         </div>
+         <br>
+         <br>
+         <hr>
+            <nav id="container">
+            <p> ¿No estas convencido? <a target="_blank" href="https://www.asocoldep.edu.co/"><br>
+            10 razones por las cuales estudiar ingenieria industrial </a>
+    <br>
+    <p>Si quieres un resumen corto y consiso puedes hacer click aqui abajo para consultar en google y tendras una respuesta de IA rapida y resumida que te ayudara, si lo que necesitas es aclarar tu duda rapidamente</p>
+    <ul>
+      <br>
+      <li><a target="_blank" href="https://www.google.com/search?q=ingenieria+industrial+que+es&client=ms-android-motorola-rvo3&sca_esv=cc16af6e80ebe361&ei=43A-aLXxIZGUwbkP39zIyQU&oq=ingenieria+industrial+que+es&gs_lp=EhNtb2JpbGUtZ3dzLXdpei1zZXJwIhxpbmdlbmllcmlhIGluZHVzdHJpYWwgcXVlIGVzMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5I-SBQkwlYxhhwAHgCkAEAmAHyBqAB2CaqAQsyLTEuMS4xLjEuNLgBA8gBAPgBAZgCCKAC-iPCAgQQABhHwgIKEAAYgAQYQxiKBcICCRAAGBYYyQMYHpgDAIgGAZAGCJIHDTEuMC4xLjEuMC4zLjKgB-s3sgcLMi0xLjEuMC4zLjK4B9AjwgcHMi0zLjQuMcgHZg&sclient=mobile-gws-wiz-serp">¡haz click aqui!</a></li>
+    </Ul>
+    <br>
+    <br>
+    </nav>
+  <br>
+  <hr>
+  <br><h2 class="contact-title">¿Necesitas asesoría o tienes dudas? ¡Contáctame!</h2>
+  <br>
+<form id="contactoForm" class="contactoForm" action="https://formspree.io/f/xyzjdqwa" method="POST">
+  <label for="nombre">Nombres</label>
+  <input type="text" id="nombre" name="nombre" placeholder="Ej. Nesly Iris" required minlength="2" maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+">
+  <span class="error"></span>
+  <br>
+  <label for="apellido">Apellidos</label>
+  <input type="text" id="apellido" name="apellido" placeholder="Ej. Madrid Pacheco" required minlength="2" maxlength="50" pattern="[A-Za-zÁÉÍÓÚáéíóúñÑ ]+">
+  <span class="error"></span>
+  <br>
+  <label for="celular">Celular</label>
+  <input type="tel" id="celular" name="celular" placeholder="Ej. 3057074109" required pattern="[0-9]{10,15}">
+  <span class="error"></span>
+  <br>
+  <label for="correo">Correo</label>
+  <input type="email" id="correo" name="correo" placeholder="Ej. neslymadri@hotmail.com" required>
+  <span class="error"></span>
+  <br>
+  <label for="mensaje">Mensaje</label>
+  <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required minlength="10" maxlength="500"></textarea>
+  <span class="error"></span>
+  <br>
+  <button type="reset">Resetear</button>
+  <button type="submit">Enviar</button>
+<div id="form-exito" class="form-exito" style="display:none;">
+  <i class="fas fa-check-circle"></i> ¡Mensaje enviado correctamente!
+</div>
+</form> 
+    <br>
+    <br>
+        <section class="estadisticas fade-in">
+  <div class="stat">
+    <span class="contador" data-numero="11">0</span>
+    <p>Proyectos</p>
+  </div>
+  <div class="stat">
+    <span class="contador" data-numero="6">0</span>
+    <p>Años de experiencia</p>
+  </div>
+  <div class="stat">
+    <span class="contador" data-numero="8">0</span>
+    <p>Cursos complementarios</p>
+  </div>
+</section>
+<br>
+<hr>
+<br>
+<h1>Ubicación</h1>
+<br>
+<div id="mapa-interactivo" style="height:300px;width:100%;max-width:600px;margin:auto;"></div>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  var map = L.map('mapa-interactivo').setView([4.6843933, -74.1853933], 15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+  L.marker([4.6843933, -74.1853933]).addTo(map)
+    .bindPopup('Conjunto Residencial Solsticio 4, Fontibón, Bogotá')
+    .openPopup();
+</script>
+<br>
+<hr>
+
+<section class="articulos fade-in" id="articulos">
+  <h2 class="section-title">Tips y Noticias de Ingeniería Industrial</h2>
+  <div class="articulos-grid">
+
+<article class="articulo">
+  <img src="imagenes/innovacion.JPG" alt="Innovación en ingeniería industrial" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>Innovación y futuro: El impacto de la ingeniería industrial en el mundo moderno</h3>
+  <p>La ingeniería industrial es mucho más que optimizar procesos: es la fuerza que impulsa la innovación en empresas y sociedades. Gracias a su visión integral, los ingenieros industriales lideran proyectos de transformación digital, automatización y sostenibilidad, adaptando las organizaciones a los retos del siglo XXI.</p>
+  <p>Desde la gestión inteligente de recursos hasta la implementación de tecnologías emergentes, la ingeniería industrial es clave para crear soluciones que mejoran la calidad de vida, potencian la competitividad y abren nuevas oportunidades en todos los sectores productivos.</p>
+  <a href="https://resources.sw.siemens.com/es-ES/e-book-4-trends-advanced-machine-engineering/" target="_blank" class="leer-mas">Descubre cómo la ingeniería industrial transforma el mundo</a>
+</article>
+
+<article class="articulo">
+  <img src="imagenes/herramientas.jpg" alt="Herramientas digitales para ingenieros industriales" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>5 herramientas digitales que todo ingeniero industrial debe conocer</h3>
+  <ul>
+    <li><strong>Excel avanzado:</strong> Para análisis de datos, simulaciones y reportes.</li>
+    <li><strong>Power BI:</strong> Visualización de datos y toma de decisiones basada en indicadores.</li>
+    <li><strong>AutoCAD:</strong> Diseño y documentación de procesos y layouts de planta.</li>
+    <li><strong>ERP (SAP, Oracle):</strong> Gestión integral de recursos empresariales.</li>
+    <li><strong>Simulación de procesos:</strong> Optimización y modelado de sistemas productivos.</li>
+  </ul>
+  <p>Dominar estas herramientas permite a los ingenieros industriales ser más eficientes, tomar mejores decisiones y liderar proyectos de transformación digital en sus empresas.</p>
+  <a href="https://cleverpy.com/5-herramientas-para-digitalizar-procesos-industriales/" target="_blank" class="leer-mas">Leer más</a>
+</article>
+
+<article class="articulo">
+  <img src="imagenes/kaizen.jpg" alt="Mejora continua Kaizen" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>Tip rápido: Mejora continua con Kaizen</h3>
+  <p>La filosofía Kaizen se basa en realizar pequeños cambios diarios que, a largo plazo, generan grandes mejoras en la eficiencia y calidad de los procesos. Aplicar Kaizen en la ingeniería industrial implica involucrar a todos los miembros del equipo, identificar oportunidades de mejora y medir los resultados para asegurar el crecimiento sostenido de la organización.</p>
+  <p>Recuerda: la mejora continua no es un proyecto con fin, sino una cultura que impulsa la excelencia y la innovación constante.</p>
+  <a href="https://www.techtarget.com/searcherp/definition/kaizen-or-continuous-improvement" target="_blank" class="leer-mas">Leer más</a>
+</article>
+
+<article class="articulo">
+  <img src="imagenes/automatizacion.jpg" alt="Industria 4.0 y automatización" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>Noticia: Tendencias en la industria 4.0</h3>
+  <p>La industria 4.0 está revolucionando la ingeniería industrial mediante la integración de tecnologías como la inteligencia artificial, el internet de las cosas (IoT) y la automatización avanzada. Estas tendencias permiten a las empresas recopilar y analizar grandes volúmenes de datos en tiempo real, optimizar la producción y anticipar fallos antes de que ocurran.</p>
+  <p>Los ingenieros industriales que se actualizan en estas áreas tienen una ventaja competitiva y pueden liderar la transformación digital en sus organizaciones.</p>
+  <a href="https://virtual.cuc.edu.co/blog/impacto-de-la-industria-cuatro-punto-cero-en-la-ingenier%C3%ADa-industrial" target="_blank" class="leer-mas">Leer más</a>
+</article>
+
+<article class="articulo">
+  <img src="imagenes/especializaciones.jpg" alt="Especialización en ingeniería industrial" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>¿Cómo elegir tu especialización en ingeniería industrial?</h3>
+  <p>La ingeniería industrial ofrece múltiples ramas de especialización como logística, calidad, producción, seguridad industrial y gestión ambiental. Para elegir la mejor opción, analiza tus intereses, investiga las tendencias del mercado laboral y consulta con profesionales del sector. Una buena especialización puede abrirte puertas a mejores oportunidades y crecimiento profesional.</p>
+  <p>No olvides que la formación continua es clave para destacar en un entorno tan dinámico como la industria.</p>
+  <a href="https://www.tuproyectodevida.pe/blog/cinco-especialidades-de-la-ingenieria-industrial" target="_blank" class="leer-mas">Leer más</a>
+</article>
+
+<article class="articulo">
+  <img src="imagenes/equipo.jpg" alt="Trabajo en equipo en la industria" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>La importancia del trabajo en equipo en la industria</h3>
+  <p>El éxito de los proyectos industriales depende en gran medida de la colaboración entre diferentes áreas y profesionales. Fomentar la comunicación, la empatía y la responsabilidad compartida permite resolver problemas de manera más eficiente y alcanzar los objetivos organizacionales.</p>
+  <p>Un ingeniero industrial debe ser un líder capaz de motivar y coordinar equipos multidisciplinarios para lograr resultados sobresalientes.</p>
+  <a href="https://www.uvg.edu.mx/blog/index.php/trabajo-en-equipo-en-una-empresa" target="_blank" class="leer-mas">Leer más</a>
+</article>
+
+<article class="articulo">
+  <img src="imagenes/logistica.jpg" alt="Logística inteligente" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>La revolución de la logística inteligente</h3>
+  <p>La logística inteligente utiliza tecnologías como el Internet de las Cosas (IoT), la inteligencia artificial y el análisis de datos para optimizar el transporte, el almacenamiento y la distribución de productos. Esto permite a las empresas reducir costos, mejorar la trazabilidad y responder rápidamente a las demandas del mercado.</p>
+  <p>Adoptar soluciones de logística inteligente es fundamental para competir en un entorno globalizado y exigente.</p>
+  <a href="https://www.utan.edu.mx/blog/index.php/en-que-consiste-la-ingenieria-industrial-en-logistica" target="_blank" class="leer-mas">Leer más</a>
+</article>
+<article class="articulo">
+  <img src="imagenes/ergonomia.jpg" alt="Ergonomía en ingeniería industrial" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>La importancia de la ergonomía en la ingeniería industrial</h3>
+  <p>La ergonomía es fundamental para adaptar los puestos de trabajo, herramientas y procesos a las capacidades y necesidades de los trabajadores. Un ingeniero industrial que aplica principios ergonómicos puede reducir lesiones, mejorar la productividad y aumentar la satisfacción laboral.</p>
+  <p>Implementar la ergonomía no solo previene enfermedades profesionales, sino que también optimiza el rendimiento de los equipos y reduce el ausentismo, generando beneficios tanto para los empleados como para la empresa.</p>
+  <a href="https://www.ilo.org/es/ergonomia" target="_blank" class="leer-mas">Leer más</a>
+</article>
+
+<article class="articulo">
+  <img src="imagenes/lean.jpg" alt="Lean Manufacturing en acción" style="width:100%; border-radius:8px; margin-bottom:1rem;">
+  <h3>Lean Manufacturing: Clave para la eficiencia</h3>
+  <p>Lean Manufacturing es una filosofía de gestión que busca eliminar desperdicios y optimizar los procesos productivos. Sus herramientas, como el mapa de flujo de valor, las 5S y el just-in-time, permiten a las empresas ser más competitivas y flexibles ante los cambios del mercado.</p>
+  <p>Adoptar Lean Manufacturing ayuda a reducir costos, mejorar la calidad y aumentar la satisfacción del cliente, convirtiéndose en una estrategia esencial para la industria moderna.</p>
+  <a href="https://blog.maestriasydiplomados.tec.mx/lean-manufacturing-que-es-y-sus-principales-herramientas" target="_blank" class="leer-mas">Leer más</a>
+</article>
+ </div>
+</section>
+<hr>
+    <br>
+    <h4 class="center-text">¡Sigueme en mis redes sociales!</h4>
+    <br>
+    <br>
+    <br>
+      <section class="buttons">              
+         <a href="https://www.facebook.com/share/191oFoH9Wi/?mibextid=wwXIfr" class="fab fa-facebook"></a>
+          <a href="https://www.instagram.com/kevin_cardonap?igsh=OTI3aHF1OWIzc2Rx&utm_source=qr" class="fab fa-instagram"></a>
+          <a href="https://www.tiktok.com/@kevincardonap?_t=ZS-8wx78wiOn04&_r=1" class="fab fa-tiktok"></a>
+          <a href="https://youtube.com/@kevincardona1456?si=yMjMBuhdisUAio_o" class="fab fa-youtube"></a>
+      </section>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <section id="faq" class="fade-in">
+  <h2>Preguntas Frecuentes</h2>
+  <div class="faq-item">
+    <button class="faq-question">¿Cuáles son las principales áreas de trabajo para un ingeniero industrial?</button>
+    <div class="faq-answer">Como ingeniero industrial, puedo desempeñarme en áreas como logística, producción, calidad, recursos humanos, consultoría, gestión de proyectos y mejora de procesos.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué habilidades debo desarrollar para ser un buen ingeniero industrial?</button>
+    <div class="faq-answer">Es importante que desarrolle habilidades en análisis de datos, liderazgo, comunicación, trabajo en equipo, pensamiento crítico y manejo de herramientas tecnológicas.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿La ingeniería industrial es solo para trabajar en fábricas?</button>
+    <div class="faq-answer">No, la ingeniería industrial es muy versátil y puedo trabajar en empresas de servicios, hospitales, bancos, consultorías, tecnología y muchos otros sectores.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué materias son más importantes durante la carrera?</button>
+    <div class="faq-answer">Algunas materias clave son matemáticas, estadística, investigación de operaciones, gestión de la producción, calidad, logística y administración.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Puedo trabajar en el extranjero como ingeniero industrial?</button>
+    <div class="faq-answer">Sí, la formación en ingeniería industrial es reconocida internacionalmente y existen muchas oportunidades para trabajar fuera de mi país.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué diferencia hay entre ingeniería industrial y otras ingenierías?</button>
+    <div class="faq-answer">La ingeniería industrial se enfoca en optimizar procesos y recursos, mientras que otras ingenierías suelen centrarse en áreas técnicas específicas como electrónica, civil o mecánica.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué tipo de proyectos puedo liderar como ingeniero industrial?</button>
+    <div class="faq-answer">Puedo liderar proyectos de mejora continua, implementación de sistemas de calidad, automatización de procesos, reducción de costos y optimización de la cadena de suministro.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Es necesario saber programar para ser ingeniero industrial?</button>
+    <div class="faq-answer">No es obligatorio, pero tener conocimientos básicos de programación y manejo de software especializado puede darme una ventaja competitiva.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué tan difícil es la carrera de ingeniería industrial?</button>
+    <div class="faq-answer">La carrera puede ser exigente, especialmente en matemáticas y gestión, pero con disciplina y organización es totalmente alcanzable.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué oportunidades de crecimiento profesional tengo?</button>
+    <div class="faq-answer">Puedo crecer hasta puestos de supervisión, gerencia, dirección de operaciones o incluso emprender mi propio negocio.</div>
+  </div>
+  <div class="faq-item">
+    <button class="faq-question">¿Qué hace un ingeniero industrial?</button>
+    <div class="faq-answer">Optimiza procesos, mejora la eficiencia y gestiona recursos en empresas.</div>
+  </div>
+</section> 
+    <br>
+    <button class="faq-question">
+  <span>¿Qué hace un ingeniero industrial?</span>
+  <span class="faq-icon">+</span>
+</button>
+    <br>
+    <p class="center-text">¡Gracias por visitar mi sitio web!</p>
+    <a href="https://wa.me/573057074102" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+    <br>
+<!-- Carrusel de testimonios -->
+<section id="testimonios" class="fade-in">
+  <h2>Testimonios</h2>
+  <br>
+  <div class="testimonio-carrusel">
+    <button class="flecha-testimonio" id="prevTestimonio" aria-label="Anterior" tabindex="0">&#8592;</button>
+    <div class="testimonio-texto" id="testimonioTexto" tabindex="0">
+      ¡Excelente servicio! - Juan
+    </div>
+    <button class="flecha-testimonio" id="nextTestimonio" aria-label="Siguiente" tabindex="0">&#8594;</button>
+  </div>
+  <div class="puntos-testimonio" id="puntosTestimonio"></div>
+</section>
+    <br>
+    <script src="script.js"></script>
+    <br>
+    <script>
+const testimonios = [
+  "¡Excelente servicio! - Juan",
+  "Muy profesional. - Ana",
+  "Recomiendo ampliamente. - Carlos",
+  "Un trabajo excepcional. - Laura",
+  "Muy satisfecho con el resultado. - Pedro",   
+  "Gran atención al cliente. - María",
+  "Cumplieron con todas mis expectativas. - Luis",
+  "Un placer trabajar con ellos. - Sofía",
+  "Muy buena comunicación. - Andrés",
+  "Altamente recomendados. - Paula",
+  "Un servicio de calidad. - Javier"
+];
+let indice = 0;
+const testimonioTexto = document.getElementById('testimonioTexto');
+const puntosTestimonio = document.getElementById('puntosTestimonio');
+
+function mostrarTestimonio(i) {
+  testimonioTexto.textContent = testimonios[i];
+  Array.from(puntosTestimonio.children).forEach((p, idx) => {
+    p.classList.toggle('activo', idx === i);
+  });
+}
+
+function crearPuntos() {
+  puntosTestimonio.innerHTML = '';
+  testimonios.forEach((_, idx) => {
+    const punto = document.createElement('button');
+    punto.className = 'punto-testimonio';
+    punto.setAttribute('aria-label', 'Ver testimonio ' + (idx + 1));
+    punto.setAttribute('tabindex', '0');
+    punto.addEventListener('click', () => {
+      indice = idx;
+      mostrarTestimonio(indice);
+      reiniciarAuto();
+    });
+    puntosTestimonio.appendChild(punto);
+  });
+}
+
+document.getElementById('prevTestimonio').addEventListener('click', () => {
+  indice = (indice - 1 + testimonios.length) % testimonios.length;
+  mostrarTestimonio(indice);
+  reiniciarAuto();
+});
+document.getElementById('nextTestimonio').addEventListener('click', () => {
+  indice = (indice + 1) % testimonios.length;
+  mostrarTestimonio(indice);
+  reiniciarAuto();
+});
+
+crearPuntos();
+mostrarTestimonio(indice);
+
+let autoCambio = setInterval(() => {
+  indice = (indice + 1) % testimonios.length;
+  mostrarTestimonio(indice);
+}, 5000);
+
+function reiniciarAuto() {
+  clearInterval(autoCambio);
+  autoCambio = setInterval(() => {
+    indice = (indice + 1) % testimonios.length;
+    mostrarTestimonio(indice);
+  }, 5000);
+}
+</script>
+<br>
+<br>
+<div id="cookie-banner" class="cookie-banner">
+  <span>
+    🍪 Usamos cookies para mejorar tu experiencia. 
+    <a href="https://www.iso25000.com/index.php/politica-cookies" class="cookie-link" style="color:#1976d2;text-decoration:underline;">Saber más</a>
+  </span>
+  <button id="aceptar-cookies" class="cookie-btn">Aceptar</button>
+  <button id="cerrar-cookies" class="cookie-close" aria-label="Cerrar">&times;</button>
+</div>
+<br>
+<br>
+<footer>
+  <div class="footer-content">
+    <div class="footer-left">
+      <p><strong>IngeMundo+</strong></p>
+      <p>Desarrollado por el Ing. Kevin Cardona</p>
+      <p>&copy; 2025 Todos los derechos reservados</p>
+    </div>
+    <div class="footer-center">
+      <a href="mailto:kevincristo10@gmail.com"><i class="fas fa-envelope"></i>kevincristo10@gmail.com</a><br>
+      <a href="tel:+573057074102"><i class="fas fa-phone"></i> +57 305 707 4102</a>
+    </div>
+    <div class="footer-right">
+      <a href="https://www.facebook.com/share/191oFoH9Wi/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/kevin_cardonap?igsh=OTI3aHF1OWIzc2Rx&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@kevincardonap?_t=ZS-8wx78wiOn04&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://youtube.com/@kevincardona1456?si=yMjMBuhdisUAio_o" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <a href="#">Política de privacidad</a> | <a href="#">Términos de uso</a>
+  </div>
+</footer>
+</body> 
+</html>
